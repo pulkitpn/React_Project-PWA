@@ -1,17 +1,50 @@
 import React from "react";
 import { useHistory } from "react-router";
-const Menu = () => {
+
+import './style.css';
+import Menu from './menuApi';
+import MenuCard from './MenuCard';
+import Navbar from './Navbar';
+
+
+
+const uniqueList = [
+    ...new Set(
+        Menu.map((curElem) => {
+            return curElem.category;
+        })
+    ),
+    "All",
+];
+const Messmenu = () => {
     const history = useHistory();
-    const openHome = () =>{
+    const openHome = () => {
         history.goBack()
     }
-    return(
+
+    const [menuData, setMenuData] = React.useState(Menu)
+    const [menuList, setMenuList] = React.useState(uniqueList)
+
+    const filterItem = (category) => {
+
+        if (category === "All") {
+            setMenuData(Menu);
+            return;
+        }
+        const updatedList = Menu.filter((curElem) => {
+            return curElem.category === category;
+        });
+        setMenuData(updatedList);
+    };
+
+    return (
         <React.Fragment>
             <div>
-                <h1>Mess Menu</h1>
+                <Navbar filterItem={filterItem} menuList={menuList} /><br/><br/>
+                <MenuCard menuData={menuData} />
                 <button onClick={openHome}>home</button>
             </div>
         </React.Fragment>
     );
 };
-export default Menu;
+export default Messmenu;

@@ -4,7 +4,7 @@ import './App.css';
 import React from 'react';
 import Navi from './Components/Navi';
 import Home from './Components/Home';
-import Menu from './Components/Menu';
+import Messmenu from './Components/Menu';
 import Landing from './Components/Landing';
 
 class App extends React.Component {
@@ -19,7 +19,7 @@ class App extends React.Component {
 
           <Route
             path="/menu"
-            component={Menu}
+            component={Messmenu}
           />
 
           <Redirect to="/home" />
