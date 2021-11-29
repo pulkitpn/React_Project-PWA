@@ -44,14 +44,31 @@ function Navi() {
                             <li className="nav-item"><a className="nav-link" href="#">XML</a></li>
                         </ul> */}
                         <ul className="nav navbar-nav ml-auto">
-                            <li className="nav-item"><a className="nav-link" href="#"><span className="fas fa-user"></span> Sign Up</a></li>
-                            <li className="nav-item"><a className="nav-link" href="#"><span className="fas fa-sign-in-alt"></span>Login</a>
+                            <li className="nav-item"><a className="nav-link" href="#" ><span className="fas fa-user"></span> Sign Up</a></li>
+                            <li className="nav-item"><a className="nav-link" href="#" data-toggle="modal" data-target="#login"><span className="fas fa-sign-in-alt"></span>Login</a>
                             </li>
                             {/* <li className="nav-item"><a className="nav-link" href="#"><span style={{ fontSize: 25 }} className="fas fa-bars"
                                 onclick="openNav()"></span></a></li> */}
                         </ul>
                     </div>
                 </nav>
+            </div>
+
+            {/* Modal code................... */}
+
+            <div className="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div className="modal-dialog modal-lg module-border-wrap rounded" role="document">
+                    <div className="modal-content module" id="modal">
+                        <div className="modal-header"><h1>Login</h1></div>
+                        <div className="email"><input type="email" placeholder="Institute Mail ID"/></div>
+                        
+                        <div className="pwd"><input type="password" placeholder="Password"/></div>
+                        <div className="remember"><input type="checkbox"/><label className="form-check-label" for="example">&nbsp; Remember me</label></div>
+                        <p className="register">Please Register, if not registered.</p>
+                        <button type="button" className="btn btn-danger">Login</button>
+                    </div>
+                </div>
             </div>
         </React.Fragment>
     )

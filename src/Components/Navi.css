@@ -8,3 +8,39 @@
             -webkit-background-clip: text;
 }
 
+#modal{
+    margin: auto;
+
+}
+
+h1{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: lighter;
+}
+
+.email{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    
+}
+.pwd{
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.remember{
+    margin: auto;
+}
+
+.register{
+    text-align: right;
+}
+
+.btn-danger{
+    margin: auto;
+    margin-bottom: 40px;
+}
