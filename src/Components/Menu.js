@@ -5,6 +5,7 @@ import './style.css';
 import Menu from './menuApi';
 import MenuCard from './MenuCard';
 import Navbar from './Navbar';
+import Navi from './Navi';
 
 
 
@@ -40,9 +41,11 @@ const Messmenu = () => {
     return (
         <React.Fragment>
             <div>
+            <Navi />
+                <br />
                 <Navbar filterItem={filterItem} menuList={menuList} /><br/><br/>
                 <MenuCard menuData={menuData} />
-                <button onClick={openHome}>home</button>
+                {/* <button onClick={openHome}>home</button> */}
             </div>
         </React.Fragment>
     );

@@ -1,22 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useHistory } from 'react-router-dom';
 import './Navi.css';
 import rvlogo from './logo_0_0.png';
 
-function Navi() {
+const Navi = ()=> {
+    const history = useHistory();
+    const openHome = () => {
+        history.push("/home")
+    }
     return (
         <React.Fragment>
             <div className="container-fluid">
                 <nav className="navbar navbar-default navbar-expand-md bg-dark navbar-dark fixed-top">
-                    <a className="navbar-brand" href="#" style={{ color: "red" }}><img src={rvlogo} style={{ height: 35 }} alt="RV Logo"/> RVezy | </a>
-                    <button className="navbar-toggler" type="button" name="toggle" data-toggle="collapse" aria-expanded="true" data-target="#collapsibleNavbar">
+                <a className="navbar-brand" onClick={openHome} style={{ color: "red" }}><img src={rvlogo} style={{ height: 35 }} /> RVezy | </a>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="true" data-target="#collapsibleNavbar">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="collapsibleNavbar">
                         <ul class="navbar-nav">
-                            <li className="nav-item active">
+                            {/* <li className="nav-item active">
                                 <a className="nav-link" href="#">Home</a>
-                            </li>
+                            </li> */}
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Events</a>
                             </li>
