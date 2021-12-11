@@ -43,7 +43,9 @@ const Messmenu = () => {
             <div>
             <Navi />
                 <br />
-                <Navbar filterItem={filterItem} menuList={menuList} /><br/><br/>
+                <br />
+                <br />
+                {/* <Navbar filterItem={filterItem} menuList={menuList} /><br/><br/> */}
                 <MenuCard menuData={menuData} />
                 {/* <button onClick={openHome}>home</button> */}
             </div>
