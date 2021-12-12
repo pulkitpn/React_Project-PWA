@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link,useHistory } from 'react-router-dom';
+import AddMenu from './AddMenu';
 import './Navi.css';
 import rvlogo from './logo_0_0.png';
 
@@ -32,6 +33,9 @@ const Navi = ()=> {
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/menu">Mess Menu</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/addmenu">Add Menu</Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Contacts</a>
