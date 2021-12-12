@@ -9,6 +9,10 @@ const Home = () => {
         history.push("/menu")
 
     }
+    const addmenu = () => {
+        history.push("/addmenu")
+
+    }
     
     return (
         <>
@@ -19,11 +23,11 @@ const Home = () => {
                             <div className="card card-tag">
                                 <div className="card-body">
                                     <span className="card-number card-circle subtle">1</span>
-                                    <span className="card-author subtle">Mess Menu</span>
+                                    {/* <span className="card-author subtle">Mess Menu</span> */}
                                     <h2 className="card-title">Mess Menu</h2>
-                                    <span className="card-description subtle">
+                                    {/* <span className="card-description subtle">
                                         Get your all the important notifications here.
-                                    </span>
+                                    </span> */}
                                     <div className="card-read">View</div>
                                 </div>
                             </div>
@@ -35,11 +39,11 @@ const Home = () => {
                             <div className="card card-tag">
                                 <div className="card-body">
                                     <span className="card-number card-circle subtle">2</span>
-                                    <span className="card-author subtle">Events</span>
+                                    {/* <span className="card-author subtle">Events</span> */}
                                     <h2 className="card-title">Events</h2>
-                                    <span className="card-description subtle">
+                                    {/* <span className="card-description subtle">
                                         Get your all the important notifications here.
-                                    </span>
+                                    </span> */}
                                     <div className="card-read">View</div>
                                 </div>
 
@@ -54,11 +58,11 @@ const Home = () => {
                             <div className="card card-tag">
                                 <div className="card-body">
                                     <span className="card-number card-circle subtle">3</span>
-                                    <span className="card-author subtle">Notifications/Circulars</span>
+                                    {/* <span className="card-author subtle">Notifications/Circulars</span> */}
                                     <h2 className="card-title">Notifications/Circulars</h2>
-                                    <span className="card-description subtle">
+                                    {/* <span className="card-description subtle">
                                         Get your all the important notifications here.
-                                    </span>
+                                    </span> */}
                                     <div className="card-read">View</div>
                                 </div>
 
@@ -71,11 +75,11 @@ const Home = () => {
                             <div className="card card-tag">
                                 <div className="card-body">
                                     <span className="card-number card-circle subtle">4</span>
-                                    <span className="card-author subtle">Calender</span>
+                                    {/* <span className="card-author subtle">Calender</span> */}
                                     <h2 className="card-title">Calender</h2>
-                                    <span className="card-description subtle">
+                                    {/* <span className="card-description subtle">
                                         Get your all the important notifications here.
-                                    </span>
+                                    </span> */}
                                     <div className="card-read">View</div>
                                 </div>
 
@@ -90,11 +94,11 @@ const Home = () => {
                             <div className="card card-tag">
                                 <div className="card-body">
                                     <span className="card-number card-circle subtle">5</span>
-                                    <span className="card-author subtle">Contacts</span>
+                                    {/* <span className="card-author subtle">Contacts</span> */}
                                     <h2 className="card-title">Contacts</h2>
-                                    <span className="card-description subtle">
+                                    {/* <span className="card-description subtle">
                                         Get your all the important notifications here.
-                                    </span>
+                                    </span> */}
                                     <div className="card-read">View</div>
                                 </div>
 
@@ -109,9 +113,9 @@ const Home = () => {
                                     <span className="card-number card-circle subtle">6</span>
                                     <span className="card-author subtle">About</span>
                                     <h2 className="card-title">About</h2>
-                                    <span className="card-description subtle">
+                                    {/* <span className="card-description subtle">
                                         Get your all the important notifications here.
-                                    </span>
+                                    </span> */}
                                     <div className="card-read">View</div>
                                 </div>
 

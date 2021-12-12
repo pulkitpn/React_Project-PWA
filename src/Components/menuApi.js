@@ -19,12 +19,12 @@ const Menuapi = [
     
     {
       id: 3,
-      name: "pizza",
+      item1: "pizza",
       category: "snacks",
     },
     {
       id: 4,
-      name: "Non-Veg Thali",
+      item1: "Non-Veg Thali",
       category: "dinner",
     }
   ];
