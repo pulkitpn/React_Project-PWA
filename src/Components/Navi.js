@@ -12,7 +12,7 @@ const Navi = ()=> {
         <React.Fragment>
             <div className="container-fluid">
                 <nav className="navbar navbar-default navbar-expand-md bg-dark navbar-dark fixed-top">
-                <a className="navbar-brand" onClick={openHome} style={{ color: "red" }}><img src={rvlogo} style={{ height: 35 }} /> RVezy | </a>
+                <a className="navbar-brand" onClick={openHome} style={{ color: "red" }}><img src={rvlogo} style={{ height: 35 }} alt='RV Logo'/> RVezy | </a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="true" data-target="#collapsibleNavbar">
                         <span className="navbar-toggler-icon"></span>
                     </button>

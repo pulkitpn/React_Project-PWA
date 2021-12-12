@@ -78,13 +78,13 @@ html {
   display: block;
   font-size: 12px;
   letter-spacing: 0.5px;
-  margin: 15px 0 0;
+  /* margin: 1px 0 0; */
   text-transform: uppercase;
 }
 
 .card-title {
   font-family: "Cormorant Garamond", serif;
-  font-size: 60px;
+  font-size: 25px;
   font-weight: 300;
   line-height: 60px;
   margin: 10px 0;
@@ -103,7 +103,7 @@ html {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 6px;
-  margin: 5px 0 20px;
+  margin: 5px 0 5px;
   position: relative;
   text-align: right;
   text-transform: uppercase;

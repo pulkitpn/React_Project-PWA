@@ -15,14 +15,14 @@ const MenuCard = ({ menuData }) => {
                                     <div className="card-body">
                                         
                                         <span className="card-author subtle">{category}</span>
-                                        <h2 className="card-title">{item1}</h2>
-                                        <h2 className="card-title">{item2}</h2>
-                                        <h2 className="card-title">{item3}</h2>
-                                        <h2 className="card-title">{item4}</h2>
-                                        <h2 className="card-title">{item5}</h2>
-                                        <h2 className="card-title">{item6}</h2>
-                                        <h2 className="card-title">{item7}</h2>
-                                        <h2 className="card-title">{item8}</h2>
+                                        <p className="card-title">{item1}</p>
+                                        <p className="card-title">{item2}</p>
+                                        <p className="card-title">{item3}</p>
+                                        <p className="card-title">{item4}</p>
+                                        <p className="card-title">{item5}</p>
+                                        <p className="card-title">{item6}</p>
+                                        <p className="card-title">{item7}</p>
+                                        <p className="card-title">{item8}</p>
                                         
                                     </div>
                                     
