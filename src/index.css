@@ -13,7 +13,7 @@ code {
     monospace;
 }
 
-image {
+/* image {
   position: relative;
 }
 
@@ -30,4 +30,4 @@ image {
   background-position: 30px 30px;
   background-repeat: no-repeat;
   opacity: 0.1;
-}
+} */

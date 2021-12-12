@@ -54,7 +54,9 @@ const Login = () => {
                     {/* <input type="button" value="Login" className="button" /><br />
                     <Link to="/register">Not registered, please Register</Link>
                     <div>or</div> */}
+                    <div className="container-fluid">
                     <input id="loginbtn" value="Sign in with Google" onClick={googleLogin} className="button" /><br />
+                    </div>
                     
                     {/* <Link to="/register">Not registered, please Register</Link> */}
                 </div>
