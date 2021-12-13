@@ -1,68 +1,58 @@
 import logo from './logo.svg';
 import { BrowserRouter, Switch, Route, Redirect, useHistory } from 'react-router-dom';
 import './App.css';
-import React, { useEffect } from 'react';
+import React from 'react';
+import Parse from 'parse/dist/parse.min.js';
 // import Navi from './Components/Navi';
 import Home from './Components/Home';
 import AddMenu from './Components/AddMenu';
 import Messmenu from './Components/Menu';
 import Landing from './Components/Landing';
-import Register from './Components/Register';
-import Login from './Components/Login';
-import { getAuth, onAuthStateChanged } from "firebase/auth";
+import Glogin from './Components/Glogin';
 
+const PARSE_APPLICATION_ID = 'ONX2K2pTF2JmV0zT3ZRUYEgKAcWbRf487znesmY2';
+const PARSE_HOST_URL = 'https://parseapi.back4app.com/';
+const PARSE_JAVASCRIPT_KEY = 'kQSzJDmSWBI5SCioJQa4w5o3TOiQrULs4NN4GBV6';
+Parse.initialize(PARSE_APPLICATION_ID, PARSE_JAVASCRIPT_KEY);
+Parse.serverURL = PARSE_HOST_URL;
 
-const App = () => {
+class App extends React.Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <Switch>
 
-  const history = useHistory();
+          <Route
+            path='/glogin'
+            component={Glogin}
+          />
 
-  useEffect(() => {
-    const auth = getAuth();
+          <Route
+            path="/home"
+            component={Landing}
+          />
+          
 
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-        return;
-      } else {
-        return history.replace('/login');
-      }
-    });
-  }, []);
+          <Route
+            path="/menu"
+            component={Messmenu}
+          />
 
-  return (
-    <BrowserRouter>
-      <Switch>
-        <Route
-          path="/login"
-          component={Login}
-        />
-        <Route
-          path="/register"
-          component={Register}
-        />
-        <Route
-          path="/home"
-          component={Landing}
-        />
+          <Route
+            path="/addmenu"
+            component={AddMenu}
+          />
 
-        <Route
-          path="/menu"
-          component={Messmenu}
-        />
-
-        <Route
-          path="/addmenu"
-          component={AddMenu}
-        />
-
-        <Redirect to="/login" />
-      </Switch>
-    </BrowserRouter>
+          <Redirect to="/glogin" />
+        </Switch>
+      </BrowserRouter >
 
 
 
 
-  )
+    )
 
+  }
 }
 
 

@@ -1,8 +1,7 @@
 import React from "react";
 import Navi from "./Navi";
 import Home from "./Home";
-import Login from "./Login";
-import Register from "./Register";
+
 
 function Landing(){
     return(
