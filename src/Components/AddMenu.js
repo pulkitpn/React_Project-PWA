@@ -1,13 +1,14 @@
 import React from 'react';
 import { useHistory } from "react-router";
 import './style.css';
-import Navi from './Navi';
+import AdminHome from './AdminHome';
+
 
 const AddMenu = ({ menuData }) => {
     return (
         <>
             <div className="">
-                <Navi />
+                <AdminHome/>
                 <br /><br /><br /><br />
                 {/* <section className="main-card--cointainer">
                     {menuData.map((curElem) => {

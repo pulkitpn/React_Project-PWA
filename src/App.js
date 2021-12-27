@@ -9,10 +9,12 @@ import AddMenu from './Components/AddMenu';
 import Messmenu from './Components/Menu';
 import Landing from './Components/Landing';
 import Glogin from './Components/Glogin';
+import AdminLogin from './Components/AdminLogin';
+import AdminHome from './Components/AdminHome';
 
-const PARSE_APPLICATION_ID = 'ONX2K2pTF2JmV0zT3ZRUYEgKAcWbRf487znesmY2';
+const PARSE_APPLICATION_ID = 'EbdDjH0e4TPNN28DY6008j6EwfEiYGyzjBYKJnAu';
 const PARSE_HOST_URL = 'https://parseapi.back4app.com/';
-const PARSE_JAVASCRIPT_KEY = 'kQSzJDmSWBI5SCioJQa4w5o3TOiQrULs4NN4GBV6';
+const PARSE_JAVASCRIPT_KEY = 'BJ9NOXbcCkOc1C3O6popzEcLPDqezrB2YE2iJjFC';
 Parse.initialize(PARSE_APPLICATION_ID, PARSE_JAVASCRIPT_KEY);
 Parse.serverURL = PARSE_HOST_URL;
 
@@ -27,11 +29,23 @@ class App extends React.Component {
             component={Glogin}
           />
 
+
+          <Route
+            path='/admin'
+            component={AdminLogin}
+          />
+
+          <Route
+            path='/adminhome'
+            component={AdminHome}
+          />
+
+
           <Route
             path="/home"
             component={Landing}
           />
-          
+
 
           <Route
             path="/menu"
