@@ -26,7 +26,8 @@ class AdminLogin extends React.Component {
         const { history } = this.props;
 
         if (this.state.username == "ADMIN" && this.state.password == "ADMIN") {
-            history.push('/adminhome');
+            history.push('./adminhome');
+            window.history.replaceState(null,null,"/adminhome");
 
 
         } else {

@@ -11,6 +11,7 @@ import Landing from './Components/Landing';
 import Glogin from './Components/Glogin';
 import AdminLogin from './Components/AdminLogin';
 import AdminHome from './Components/AdminHome';
+import AdminMenu from './Components/AdminMenu';
 
 const PARSE_APPLICATION_ID = 'EbdDjH0e4TPNN28DY6008j6EwfEiYGyzjBYKJnAu';
 const PARSE_HOST_URL = 'https://parseapi.back4app.com/';
@@ -27,34 +28,46 @@ class App extends React.Component {
           <Route
             path='/glogin'
             component={Glogin}
+            exact
           />
 
 
           <Route
             path='/admin'
             component={AdminLogin}
+            exact
           />
 
           <Route
             path='/adminhome'
             component={AdminHome}
+            exact
           />
 
 
           <Route
             path="/home"
             component={Landing}
+            exact
           />
 
 
           <Route
             path="/menu"
             component={Messmenu}
+            exact
           />
 
           <Route
-            path="/addmenu"
+            path="/admin/addmenu"
             component={AddMenu}
+            exact
+          />
+
+          <Route
+            path="/admin/menu"
+            component={AdminMenu}
+            exact
           />
 
           <Redirect to="/glogin" />

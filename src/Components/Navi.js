@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useState }  from 'react';
+import Parse from 'parse/dist/parse.min.js';
+import GoogleLogin from 'react-google-login';
+// import {Glogin, doUserLogOut} from './Glogin';
 import { Link,useHistory } from 'react-router-dom';
 import AddMenu from './AddMenu';
 import './Navi.css';
@@ -9,6 +12,41 @@ const Navi = ()=> {
     const openHome = () => {
         history.push("/home")
     }
+    
+
+    const [currentUser, setCurrentUser] = useState(null);
+
+    const doUserLogOut = async function () {
+        try {
+          await Parse.User.logOut();
+          // To verify that current user is now empty, currentAsync can be used
+          const currentUser = await Parse.User.current();
+          if (currentUser === null) {
+            alert('Success! No user is logged in anymore!');
+            history.replace('./glogin');
+            window.history.replaceState(null,null,"/glogin");
+            
+          }
+          // Update state variable holding current user
+          getCurrentUser();
+          return true;
+        } catch (error) {
+          alert(`Error! ${error.message}`);
+          return false;
+        }
+        
+      };
+
+      const getCurrentUser = async function () {
+        const currentUser = await Parse.User.current();
+        // Update state variable holding current user
+        setCurrentUser(currentUser);
+        return currentUser;
+      };
+
+
+
+      
     return (
         <React.Fragment>
             <div className="container-fluid">
@@ -53,7 +91,7 @@ const Navi = ()=> {
                         </ul> */}
                         <ul className="nav navbar-nav ml-auto">
                             <li className="nav-item"><a className="nav-link" href="#" ><span className="fas fa-user"></span> User</a></li>
-                            <li className="nav-item"><a className="nav-link" href="#" ><span className="fas fa-sign-out-alt"></span>Logout</a>
+                            <li className="nav-item"><a className="nav-link" onClick={doUserLogOut} ><span className="fas fa-sign-out-alt"></span>Logout</a>
                             </li>
                             {/* <li className="nav-item"><a className="nav-link" href="#"><span style={{ fontSize: 25 }} className="fas fa-bars"
                                 onclick="openNav()"></span></a></li> */}

@@ -6,7 +6,6 @@
   }
   
   html {
-    background: #faf7f2;
     /* background-image: url(https://s3.postimg.org/s1n3ji1ur/paper_fibers_2_X.png); */
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
@@ -29,6 +28,7 @@
     grid-template-columns: repeat(1, minmax(300px, 500px));
     grid-gap: 10px;
     justify-content: space-around;
+    padding-top: 108px;
   }
   
   /* .subtle {
@@ -187,7 +187,7 @@
     border: none;
     /* min-width: 6rem; */
     padding: 1.5rem 3rem;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     cursor: pointer;
     margin: 0;
     font-size: 17px;

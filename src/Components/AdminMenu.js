@@ -1,19 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from "react-router";
 import Parse from 'parse/dist/parse.min.js';
-
 import './style.css';
+import AdminHome from './AdminHome';
 
-import MenuCard from './MenuCard';
-import Navbar from './Navbar';
-import Navi from './Navi';
-
-
-
-
-const Messmenu = () => {
-
-
+const AdminMenu = () => {
     const [breakfastMenu, setBreakfastMenu] = useState([]);
     // const [bfast, setBfast] = useState('');
 
@@ -66,7 +57,7 @@ const Messmenu = () => {
     return(
         <React.Fragment>
             <div>
-            <Navi />
+            <AdminHome />
 
             <section className="main-card--cointainer">
 
@@ -131,5 +122,6 @@ const Messmenu = () => {
             </div>
         </React.Fragment>
     );
-};
-export default Messmenu;
+}
+
+export default AdminMenu;

@@ -111,7 +111,6 @@ const Home = () => {
                             <div className="card card-tag">
                                 <div className="card-body">
                                     <span className="card-number card-circle subtle">6</span>
-                                    <span className="card-author subtle">About</span>
                                     <h2 className="card-title">About</h2>
                                     {/* <span className="card-description subtle">
                                         Get your all the important notifications here.
