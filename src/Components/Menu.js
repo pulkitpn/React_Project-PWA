@@ -3,6 +3,7 @@ import { useHistory } from "react-router";
 import Parse from 'parse/dist/parse.min.js';
 
 import './style.css';
+import "./Menu.css";
 
 import MenuCard from './MenuCard';
 import Navbar from './Navbar';
@@ -68,16 +69,19 @@ const Messmenu = () => {
             <div>
             <Navi />
 
-            <section className="main-card--cointainer">
+            <section className="main-card--cointainer ">
 
-                    <>
-                        <div className="card-container" >
+                    <div className="container-fluid shadow p-3 mb-5 bg-white rounded">
+                        <div className="card-container">
                             <div className="card">
                                 <div className="card-body">
 
                                     <span className="card-author subtle">Breakfast</span>
-                                    {breakfastMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center">{data}</span>)}
-                                   
+                                    {breakfastMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center menuItem">{data}</span>)}
+                                    <center>
+                                    Interested <input type="radio" className="mt-2 mr-5" name="breakfast" value="1"></input>
+                                    Not Interested <input type="radio" className="mt-2" name="breakfast" value="0"></input>
+                                    </center>
 
                                 </div>
 
@@ -89,8 +93,11 @@ const Messmenu = () => {
                                 <div className="card-body">
 
                                     <span className="card-author subtle">Lunch</span>
-                                    {lunchMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center">{data}</span>)}
-                                    
+                                    {lunchMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center menuItem">{data}</span>)}
+                                    <center>
+                                    Interested <input type="radio" className="mt-2 mr-5" name="lunch" value="1"></input>
+                                    Not Interested <input type="radio" className="mt-2" name="lunch" value="0"></input>
+                                    </center>
 
                                 </div>
 
@@ -102,8 +109,11 @@ const Messmenu = () => {
                                 <div className="card-body">
 
                                     <span className="card-author subtle">Snacks</span>
-                                    {snacksMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center">{data}</span>)}
-                                    
+                                    {snacksMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center menuItem">{data}</span>)}
+                                    <center>
+                                    Interested <input type="radio" className="mt-2 mr-5" name="snacks" value="1"></input>
+                                    Not Interested <input type="radio" className="mt-2" name="snacks" value="0"></input>
+                                    </center>
 
                                 </div>
 
@@ -115,8 +125,11 @@ const Messmenu = () => {
                                 <div className="card-body">
 
                                     <span className="card-author subtle">Dinner</span>
-                                    {dinnerMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center">{data}</span>)}
-                                    
+                                    {dinnerMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center menuItem">{data}</span>)}
+                                    <center>
+                                    Interested <input type="radio" className="mt-2 mr-5" name="dinner" value="1"></input>
+                                    Not Interested <input type="radio" className="mt-2" name="dinner" value="0"></input>
+                                    </center>
 
                                 </div>
 
@@ -124,7 +137,7 @@ const Messmenu = () => {
                         </div>
 
                         
-                    </>
+                    </div>
 
                 </section>
 

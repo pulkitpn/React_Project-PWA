@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from "react-router";
 import Parse from 'parse/dist/parse.min.js';
 import './style.css';
+import "./Home.css"
 import AdminHome from './AdminHome';
 
 const AdminMenu = () => {
