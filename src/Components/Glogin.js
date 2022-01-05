@@ -5,6 +5,7 @@ import { useHistory, useLocation } from 'react-router-dom';
 
 import './Glogin.css';
 import { Button, Divider } from 'antd';
+import logo from './RVezy1.png';
 
 export const Glogin = () => {
   const location = useLocation();
@@ -93,6 +94,8 @@ export const Glogin = () => {
         <div className="container-fluid">
           <h2 className="heading">User Login</h2>
           <Divider />
+
+          <center><img src={logo} style={{height: 300}} alt='rvlogo'/></center>
 
           <div className="login-social">
 
