@@ -6,7 +6,7 @@ import { Link, useHistory } from 'react-router-dom';
 const AdminHome = () => {
     const history = useHistory();
     const openHome = () => {
-        history.push('/adminhome')
+        history.push('/ahome')
     }
     const Logout = () => {
         history.replace('./glogin');
@@ -51,6 +51,8 @@ const AdminHome = () => {
                     </div>
                 </nav>
             </div>
+
+            
 
         </React.Fragment>
     )

@@ -3,6 +3,7 @@ import { useHistory } from "react-router";
 import Parse from 'parse/dist/parse.min.js';
 import './style.css';
 import AdminHome from './AdminHome';
+import './Menu.css';
 
 const AddMenu = () => {
     const [menuId, setMenuId] = useState('');
@@ -210,8 +211,8 @@ const AddMenu = () => {
                                 <div className="card-body">
 
                                     <span className="card-author subtle ">Breakfast</span>
-                                    {breakfastMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center mt-4">{data}</span>)}
-                                    <input type="text" className="bfast w-100 mt-4" placeholder="enter breakfast" value={bfast} onChange={handleBfastChange} />
+                                    {breakfastMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center mt-2 menuItem">{data}</span>)}
+                                    <input type="text" className="bfast w-100 mt-4 shadow" placeholder="enter breakfast" value={bfast} onChange={handleBfastChange} />
                                     <center><button className="btn btn-primary rounded mt-2" onClick={addBMenu}>Add</button></center>
 
                                 </div>
@@ -226,8 +227,8 @@ const AddMenu = () => {
                                 <div className="card-body">
 
                                     <span className="card-author subtle ">Lunch</span>
-                                    {lunchMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center mt-4">{data}</span>)}
-                                    <input type="text" className="bfast w-100 mt-4" placeholder="enter lunch" value={lunch} onChange={handleLunchChange} />
+                                    {lunchMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center mt-2 menuItem">{data}</span>)}
+                                    <input type="text" className="bfast w-100 mt-4 shadow" placeholder="enter lunch" value={lunch} onChange={handleLunchChange} />
                                     <center><button className="btn btn-primary rounded mt-2" onClick={addLunch}>Add</button></center>
 
                                 </div>
@@ -242,8 +243,8 @@ const AddMenu = () => {
                                 <div className="card-body">
 
                                     <span className="card-author subtle ">Snacks</span>
-                                    {snacksMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center mt-4">{data}</span>)}
-                                    <input type="text" className="bfast w-100 mt-4" placeholder="enter lunch" value={snacks} onChange={handleSnacksChange} />
+                                    {snacksMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center mt-2 menuItem">{data}</span>)}
+                                    <input type="text" className="bfast w-100 mt-4 shadow" placeholder="enter lunch" value={snacks} onChange={handleSnacksChange} />
                                     <center><button className="btn btn-primary rounded mt-2" onClick={addSnacks}>Add</button></center>
 
                                 </div>
@@ -258,8 +259,8 @@ const AddMenu = () => {
                                 <div className="card-body">
 
                                     <span className="card-author subtle ">Dinner</span>
-                                    {dinnerMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center mt-4">{data}</span>)}
-                                    <input type="text" className="bfast w-100 mt-4" placeholder="enter lunch" value={dinner} onChange={handleDinnerChange} />
+                                    {dinnerMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center mt-2 menuItem">{data}</span>)}
+                                    <input type="text" className="bfast w-100 mt-4 shadow" placeholder="enter lunch" value={dinner} onChange={handleDinnerChange} />
                                     <center><button className="btn btn-primary rounded mt-2" onClick={addDinner}>Add</button></center>
 
                                 </div>
@@ -270,10 +271,10 @@ const AddMenu = () => {
 
                 </section>
                 <center>
-                    <button className="btn btn-success rounded" onClick={saveMenu}>{isEdit ? 'Edit Menu' : 'Add Menu'}</button>
+                    <button className="btn btn-success rounded shadow" onClick={saveMenu}>{isEdit ? 'Edit Menu' : 'Add Menu'}</button>
                 </center>
                 <center>
-                    <button className="btn btn-danger rounded mt-2" onClick={deleteMenu} disabled={!isEdit}>Delete</button>
+                    <button className="btn btn-danger rounded mt-2 shadow" onClick={deleteMenu} disabled={!isEdit}>Delete</button>
                 </center>
             </div>
         </>

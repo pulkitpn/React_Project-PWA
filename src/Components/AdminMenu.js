@@ -3,6 +3,7 @@ import { useHistory } from "react-router";
 import Parse from 'parse/dist/parse.min.js';
 import './style.css';
 import "./Home.css"
+import './Menu.css';
 import AdminHome from './AdminHome';
 
 const AdminMenu = () => {
@@ -60,15 +61,15 @@ const AdminMenu = () => {
             <div>
             <AdminHome />
 
-            <section className="main-card--cointainer">
+            <section className="main-card--cointainer ">
 
                     <>
-                        <div className="card-container" >
+                        <div className="card-container " >
                             <div className="card">
                                 <div className="card-body">
 
                                     <span className="card-author subtle">Breakfast</span>
-                                    {breakfastMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center">{data}</span>)}
+                                    {breakfastMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center menuItem">{data}</span>)}
                                    
 
                                 </div>
@@ -81,7 +82,7 @@ const AdminMenu = () => {
                                 <div className="card-body">
 
                                     <span className="card-author subtle">Lunch</span>
-                                    {lunchMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center">{data}</span>)}
+                                    {lunchMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center menuItem">{data}</span>)}
                                     
 
                                 </div>
@@ -94,7 +95,7 @@ const AdminMenu = () => {
                                 <div className="card-body">
 
                                     <span className="card-author subtle">Snacks</span>
-                                    {snacksMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center">{data}</span>)}
+                                    {snacksMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center menuItem">{data}</span>)}
                                     
 
                                 </div>
@@ -107,7 +108,7 @@ const AdminMenu = () => {
                                 <div className="card-body">
 
                                     <span className="card-author subtle">Dinner</span>
-                                    {dinnerMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center">{data}</span>)}
+                                    {dinnerMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center menuItem">{data}</span>)}
                                     
 
                                 </div>

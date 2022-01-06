@@ -26,8 +26,9 @@ class AdminLogin extends React.Component {
         const { history } = this.props;
 
         if (this.state.username == "ADMIN" && this.state.password == "ADMIN") {
-            history.push('./adminhome');
-            window.history.replaceState(null,null,"/adminhome");
+            history.replace('./ahome');
+            window.history.pushState(null,null,"/ahome");
+            history.push('./ahome');
 
 
         } else {
@@ -42,10 +43,10 @@ class AdminLogin extends React.Component {
         const { history } = this.props;
         return (
             <React.Fragment>
-                <div>
+                <div className="container-fluid">
                     <form >
                         <div className="admin">
-                            <h1> Login</h1><br /><br />
+                            <h1>Admin Login</h1><br /><br />
                             <input type="text" placeholder="Enter Username" value={this.state.username} onChange={(event) => this.handle(event, "username")} required="true" /><br />
                             <input type="password" placeholder="Enter Password" value={this.state.password} onChange={(event) => this.handle(event, "password")} required="true" /><br /><br />
                             <input type="submit" value="Login" class="button" onClick={this.validate()} />
