@@ -16,9 +16,9 @@ const Home = () => {
     
     return (
         <>
-            <div className="main-card--container">
-                <div className="row">
-                    <div className="col-sm-6">
+            <div className="main-card--container container shadow p-3 mb-5 bg-white rounded">
+                <div >
+                    <div >
                         <div className="card-container" key='1' onClick={openmenu}>
                             <div className="card card-tag">
                                 <div className="card-body">
@@ -34,7 +34,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="col-sm-6">
+                    <div >
                         <div className="card-container" key='2'>
                             <div className="card card-tag">
                                 <div className="card-body">
@@ -52,8 +52,8 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="row">
-                    <div className="col-sm-6">
+                <div >
+                    <div >
                         <div className="card-container" key='3'>
                             <div className="card card-tag">
                                 <div className="card-body">
@@ -70,7 +70,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="col-sm-6">
+                    <div >
                         <div className="card-container" key='4'>
                             <div className="card card-tag">
                                 <div className="card-body">
@@ -88,8 +88,8 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="row">
-                    <div className="col-sm-6">
+                <div >
+                    <div >
                         <div className="card-container" key='5'>
                             <div className="card card-tag">
                                 <div className="card-body">
@@ -106,7 +106,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="col-sm-6">
+                    <div >
                         <div className="card-container" key='6'>
                             <div className="card card-tag">
                                 <div className="card-body">
