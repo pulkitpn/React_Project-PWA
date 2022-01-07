@@ -100,7 +100,7 @@ export const Glogin = () => {
           <div className="login-social">
 
             <GoogleLogin
-              clientId="108490793456-0flm4qh8ek4cb4krt7e06980o4sjvado.apps.googleusercontent.com"
+              clientId="923753418469-nhh05niegmae71vp0kjjlvuca98hgevm.apps.googleusercontent.com"
               render={renderProps => (
                 <div onClick={renderProps.onClick} className="login-social-item" >
                   
