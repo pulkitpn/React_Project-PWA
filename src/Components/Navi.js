@@ -60,7 +60,7 @@ const Navi = ()=> {
                             {/* <li className="nav-item active">
                                 <a className="nav-link" href="#">Home</a>
                             </li> */}
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <a className="nav-link" href="#">Events</a>
                             </li>
                             <li className="nav-item">
@@ -68,7 +68,7 @@ const Navi = ()=> {
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Calender</a>
-                            </li>
+                            </li> */}
                             <li className="nav-item">
                                 <Link className="nav-link" to="/menu">Mess Menu</Link>
                             </li>

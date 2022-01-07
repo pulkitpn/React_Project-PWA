@@ -12,6 +12,7 @@ import Glogin from './Components/Glogin';
 import AdminLogin from './Components/AdminLogin';
 import AdminHome from './Components/AdminHome';
 import AdminMenu from './Components/AdminMenu';
+import Ahome from './Components/Ahome'
 
 const PARSE_APPLICATION_ID = 'EbdDjH0e4TPNN28DY6008j6EwfEiYGyzjBYKJnAu';
 const PARSE_HOST_URL = 'https://parseapi.back4app.com/';
@@ -41,6 +42,12 @@ class App extends React.Component {
           <Route
             path='/adminhome'
             component={AdminHome}
+            exact
+          />
+
+          <Route
+            path='/ahome'
+            component={Ahome}
             exact
           />
 

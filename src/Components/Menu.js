@@ -78,10 +78,10 @@ const Messmenu = () => {
 
                                     <span className="card-author subtle">Breakfast</span>
                                     {breakfastMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center menuItem">{data}</span>)}
-                                    <center>
+                                    {/* <center>
                                     Interested <input type="radio" className="mt-2 mr-5" name="breakfast" value="1"></input>
                                     Not Interested <input type="radio" className="mt-2" name="breakfast" value="0"></input>
-                                    </center>
+                                    </center> */}
 
                                 </div>
 
@@ -94,10 +94,10 @@ const Messmenu = () => {
 
                                     <span className="card-author subtle">Lunch</span>
                                     {lunchMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center menuItem">{data}</span>)}
-                                    <center>
+                                    {/* <center>
                                     Interested <input type="radio" className="mt-2 mr-5" name="lunch" value="1"></input>
                                     Not Interested <input type="radio" className="mt-2" name="lunch" value="0"></input>
-                                    </center>
+                                    </center> */}
 
                                 </div>
 
@@ -110,10 +110,10 @@ const Messmenu = () => {
 
                                     <span className="card-author subtle">Snacks</span>
                                     {snacksMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center menuItem">{data}</span>)}
-                                    <center>
+                                    {/* <center>
                                     Interested <input type="radio" className="mt-2 mr-5" name="snacks" value="1"></input>
                                     Not Interested <input type="radio" className="mt-2" name="snacks" value="0"></input>
-                                    </center>
+                                    </center> */}
 
                                 </div>
 
@@ -126,10 +126,10 @@ const Messmenu = () => {
 
                                     <span className="card-author subtle">Dinner</span>
                                     {dinnerMenu.map((data) => <span className="d-flex flex-direction-column mb-2 justify-content-center menuItem">{data}</span>)}
-                                    <center>
+                                    {/* <center>
                                     Interested <input type="radio" className="mt-2 mr-5" name="dinner" value="1"></input>
                                     Not Interested <input type="radio" className="mt-2" name="dinner" value="0"></input>
-                                    </center>
+                                    </center> */}
 
                                 </div>
 
