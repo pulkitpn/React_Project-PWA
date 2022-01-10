@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Parse from 'parse/dist/parse.min.js';
 import GoogleLogin from 'react-google-login';
-import { useHistory, useLocation } from 'react-router-dom';
+import { useHistory, useLocation, Link } from 'react-router-dom';
 
 import './Glogin.css';
 import { Button, Divider } from 'antd';
@@ -46,7 +46,11 @@ export const Glogin = () => {
       return false;
     } else {
       // window.localStorage.setItem('tokenId', location.state.tokenId);
+     
       history.replace('./home');
+      
+      
+      
       try {
         // Gather Google user info
         const userGoogleId = response.googleId;
@@ -69,6 +73,8 @@ export const Glogin = () => {
           //     'username'
           //   )} has successfully signed in!`
           // );
+          window.localStorage.setItem('username',userEmail);
+          window.location.reload();
           // Update state variable holding current user
           getCurrentUser();
           
@@ -82,6 +88,7 @@ export const Glogin = () => {
         console.log('Error gathering Google user info, please try again!');
         return false;
       }
+      window.location.reload();
     }
   
 
@@ -101,6 +108,7 @@ export const Glogin = () => {
 
             <GoogleLogin
               clientId="923753418469-8nq15emstqrqa4nt0cs050aa2nkn4mg8.apps.googleusercontent.com"
+              // clientId="108490793456-0flm4qh8ek4cb4krt7e06980o4sjvado.apps.googleusercontent.com"
               render={renderProps => (
                 <div onClick={renderProps.onClick} className="login-social-item" >
                   

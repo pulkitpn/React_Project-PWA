@@ -1,17 +1,20 @@
-import React, { useState }  from 'react';
+import React, { useState, useEffect}  from 'react';
 import Parse from 'parse/dist/parse.min.js';
-import GoogleLogin from 'react-google-login';
+// import GoogleLogin from 'react-google-login';
 // import {Glogin, doUserLogOut} from './Glogin';
 import { Link,useHistory } from 'react-router-dom';
-import AddMenu from './AddMenu';
+// import AddMenu from './AddMenu';
 import './Navi.css';
 import rvlogo from './logo_0_0.png';
+
+
 
 const Navi = ()=> {
     const history = useHistory();
     const openHome = () => {
         history.push("/home")
     }
+    
     
 
     const [currentUser, setCurrentUser] = useState(null);
@@ -43,10 +46,7 @@ const Navi = ()=> {
         setCurrentUser(currentUser);
         return currentUser;
       };
-
-
-
-      
+            
     return (
         <React.Fragment>
             <div className="container-fluid">
@@ -70,7 +70,7 @@ const Navi = ()=> {
                                 <a className="nav-link" href="#">Calender</a>
                             </li> */}
                             <li className="nav-item">
-                                <Link className="nav-link" to="/menu">Mess Menu</Link>
+                                <Link className="nav-link" to="/menu" refresh="true">Mess Menu</Link>
                             </li>
                             {/* <li className="nav-item">
                                 <Link className="nav-link" to="/addmenu">Add Menu</Link>
@@ -90,7 +90,7 @@ const Navi = ()=> {
                             <li className="nav-item"><a className="nav-link" href="#">XML</a></li>
                         </ul> */}
                         <ul className="nav navbar-nav ml-auto">
-                            <li className="nav-item"><a className="nav-link" href="#" ><span className="fas fa-user"></span> User</a></li>
+                            <li className="nav-item"><a className="nav-link" href="#" ><span className="fas fa-user"></span> {window.localStorage.getItem("username")}</a></li>
                             <li className="nav-item"><a className="nav-link" onClick={doUserLogOut} ><span className="fas fa-sign-out-alt"></span>Logout</a>
                             </li>
                             {/* <li className="nav-item"><a className="nav-link" href="#"><span style={{ fontSize: 25 }} className="fas fa-bars"

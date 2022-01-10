@@ -21,7 +21,10 @@
 
 const cacheName = "version1";
 const cacheAssets = [
-    "index.html"
+    "src\Components\Glogin.js",
+    "src\Components\AdminHome.js",
+    "src\Components\AddMenu.js",
+    "src\Components\AdminMenu.js"
 ]
 
 self.addEventListener('install',event =>
