@@ -7,7 +7,7 @@ const Contacts = () => {
         <React.Fragment>
             <Navi/>
             <section className="main-card--cointainer">
-                <div className="card-container" >
+                <div className="card-container shadow" >
                     <div className="card">
                         <div className="card-body">
                             <span className="card-author subtle ">Chief Warden</span>
@@ -19,7 +19,7 @@ const Contacts = () => {
                     </div>
                 </div>
 
-                <div className="card-container" >
+                <div className="card-container shadow" >
                     <div className="card">
                         <div className="card-body">
                             <span className="card-author subtle ">Warden</span>
@@ -31,7 +31,7 @@ const Contacts = () => {
                 </div>
 
                
-                <div className="card-container" >
+                <div className="card-container shadow" >
                     <div className="card">
                         <div className="card-body">
                             <span className="card-author subtle ">Warden RVCE Girls Hostel</span>
@@ -43,7 +43,7 @@ const Contacts = () => {
                     </div>
                 </div>
 
-                <div className="card-container" >
+                <div className="card-container shadow" >
                     <div className="card">
                         <div className="card-body">
                             <span className="card-author subtle ">RVCE Hostels</span>
