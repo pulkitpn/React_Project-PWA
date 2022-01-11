@@ -76,7 +76,7 @@ const Navi = ()=> {
                                 <Link className="nav-link" to="/addmenu">Add Menu</Link>
                             </li> */}
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Contacts</a>
+                                <Link className="nav-link" to="/contact">Contacts</Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">About</a>

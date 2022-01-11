@@ -9,8 +9,8 @@ const Home = () => {
         history.push("/menu")
 
     }
-    const addmenu = () => {
-        history.push("/addmenu")
+    const openContact = () => {
+        history.push("/contact")
 
     }
     
@@ -37,7 +37,7 @@ const Home = () => {
 
                 <div >
                     <div >
-                        <div className="card-container" key='2'>
+                        <div className="card-container" key='2' onClick={openContact}>
                             <div className="card card-tag">
                                 <div className="card-body">
                                     <span className="card-number card-circle subtle">2</span>
