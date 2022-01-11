@@ -1,7 +1,7 @@
 import { Link , useHistory} from 'react-router-dom';
 import React from 'react';
 import './Home.css';
-import Menu from './Menu';
+import './contact.css';
 
 const Home = () => {
     const history=useHistory();
@@ -11,7 +11,9 @@ const Home = () => {
     }
     const openContact = () => {
         history.push("/contact")
-
+    }
+    const openAbout = () => {
+        history.push("/about")
     }
     
     return (
@@ -19,7 +21,7 @@ const Home = () => {
             <div className="main-card--container container shadow p-3 mb-5 bg-white rounded">
                 <div >
                     <div >
-                        <div className="card-container" key='1' onClick={openmenu}>
+                        <div className="card-container shadow" key='1' onClick={openmenu}>
                             <div className="card card-tag">
                                 <div className="card-body">
                                     <span className="card-number card-circle subtle">1</span>
@@ -37,7 +39,7 @@ const Home = () => {
 
                 <div >
                     <div >
-                        <div className="card-container" key='2' onClick={openContact}>
+                        <div className="card-container shadow" key='2' onClick={openContact}>
                             <div className="card card-tag">
                                 <div className="card-body">
                                     <span className="card-number card-circle subtle">2</span>
@@ -54,7 +56,7 @@ const Home = () => {
                     </div>
 
                     <div >
-                        <div className="card-container" key='3'>
+                        <div className="card-container shadow" key='3' onClick={openAbout}>
                             <div className="card card-tag">
                                 <div className="card-body">
                                     <span className="card-number card-circle subtle">3</span>

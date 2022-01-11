@@ -14,6 +14,7 @@ import AdminHome from './Components/AdminHome';
 import AdminMenu from './Components/AdminMenu';
 import Ahome from './Components/Ahome';
 import Contacts from './Components/Contacts';
+import About from './Components/About';
 
 const PARSE_APPLICATION_ID = 'EbdDjH0e4TPNN28DY6008j6EwfEiYGyzjBYKJnAu';
 const PARSE_HOST_URL = 'https://parseapi.back4app.com/';
@@ -69,6 +70,11 @@ class App extends React.Component {
           <Route
             path="/contact"
             component={Contacts}
+          />
+
+          <Route
+            path="/about"
+            component={About}
           />
 
           <Route

@@ -79,7 +79,7 @@ const Navi = ()=> {
                                 <Link className="nav-link" to="/contact">Contacts</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">About</a>
+                                <Link className="nav-link" to="/about">About</Link>
                             </li>
                         </ul>
                         {/* <ul className="navbar-nav">

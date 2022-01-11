@@ -4,10 +4,8 @@ import Parse from 'parse/dist/parse.min.js';
 
 import './style.css';
 import "./Menu.css";
-
-import MenuCard from './MenuCard';
-import Navbar from './Navbar';
 import Navi from './Navi';
+import './contact.css';
 
 
 
@@ -72,7 +70,7 @@ const Messmenu = () => {
             <section className="main-card--cointainer ">
 
                     <div className="container-fluid shadow p-3 mb-5 bg-white rounded">
-                        <div className="card-container">
+                        <div className="card-container shadow">
                             <div className="card">
                                 <div className="card-body">
 
@@ -88,7 +86,7 @@ const Messmenu = () => {
                             </div>
                         </div>
 
-                        <div className="card-container" >
+                        <div className="card-container shadow" >
                             <div className="card">
                                 <div className="card-body">
 
@@ -104,7 +102,7 @@ const Messmenu = () => {
                             </div>
                         </div>
 
-                        <div className="card-container" >
+                        <div className="card-container shadow" >
                             <div className="card">
                                 <div className="card-body">
 
@@ -120,7 +118,7 @@ const Messmenu = () => {
                             </div>
                         </div>
 
-                        <div className="card-container" >
+                        <div className="card-container shadow" >
                             <div className="card">
                                 <div className="card-body">
 
