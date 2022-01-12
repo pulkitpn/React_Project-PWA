@@ -8,6 +8,12 @@
       "type": "image/png"
     },
     {
+      "src": "maskable_icon.png",
+      "sizes": "150x150",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
       "src": "rvc.png",
       "sizes": "1080x1080",
       "type": "image/png"

@@ -52,11 +52,11 @@ const Navi = ()=> {
             <div className="container-fluid">
                 <nav className="navbar navbar-default navbar-expand-md bg-dark navbar-dark fixed-top">
                 <a className="navbar-brand" onClick={openHome} style={{ color: "red" }}><img src={rvlogo} style={{ height: 35 }} alt='RV Logo'/> RVezy | </a>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="true" data-target="#collapsibleNavbar">
+                    <button className="navbar-toggler" type="button" name="togglebtn" data-toggle="collapse" aria-expanded="true" data-target="#collapsibleNavbar">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul class="navbar-nav">
+                        <ul className="navbar-nav">
                             {/* <li className="nav-item active">
                                 <a className="nav-link" href="#">Home</a>
                             </li> */}
