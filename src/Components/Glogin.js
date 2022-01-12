@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Parse from 'parse/dist/parse.min.js';
 import GoogleLogin from 'react-google-login';
-import { useHistory, useLocation, Link } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 
 import './Glogin.css';
-import { Button, Divider } from 'antd';
+import { Divider } from 'antd';
 import logo from './RVezy1.png';
 
 export const Glogin = () => {
@@ -14,22 +14,22 @@ export const Glogin = () => {
         history.push("/admin")
     }
   const [currentUser, setCurrentUser] = useState(null);
-  const doUserLogOut = async function () {
-    try {
-      await Parse.User.logOut();
-      // To verify that current user is now empty, currentAsync can be used
-      const currentUser = await Parse.User.current();
-      if (currentUser === null) {
-        alert('Success! No user is logged in anymore!');
-      }
-      // Update state variable holding current user
-      getCurrentUser();
-      return true;
-    } catch (error) {
-      alert(`Error! ${error.message}`);
-      return false;
-    }
-  };
+  // const doUserLogOut = async function () {
+  //   try {
+  //     await Parse.User.logOut();
+  //     // To verify that current user is now empty, currentAsync can be used
+  //     const currentUser = await Parse.User.current();
+  //     if (currentUser === null) {
+  //       alert('Success! No user is logged in anymore!');
+  //     }
+  //     // Update state variable holding current user
+  //     getCurrentUser();
+  //     return true;
+  //   } catch (error) {
+  //     alert(`Error! ${error.message}`);
+  //     return false;
+  //   }
+  // };
 
   // Function that will return current user and also update current username
   const getCurrentUser = async function () {
@@ -88,7 +88,6 @@ export const Glogin = () => {
         console.log('Error gathering Google user info, please try again!');
         return false;
       }
-      window.location.reload();
     }
   
 

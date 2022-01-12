@@ -1,6 +1,6 @@
 import React from 'react';
 import "./AdminLogin.css";
-import { useHistory, useLocation, withRouter } from 'react-router-dom';
+import {  withRouter } from 'react-router-dom';
 
 
 class AdminLogin extends React.Component {

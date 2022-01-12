@@ -14,8 +14,10 @@ const About = () => {
                     <p><span className="fa fa-envelope"></span>  <a href="mailto:pulkitn.mca20@rvce.edu.in">pulkitn.mca20@rvce.edu.in</a></p>
                     <p>or</p>
                     <p><span className="fa fa-envelope"></span>  <a href="mailto:anshulg.mca20@rvce.edu.in">anshulg.mca20@rvce.edu.in</a></p>
+                    <br /><br /><br /><br />
                     <footer className="footer">
-                        <span className="developed">DEVELOPED by PULKIT NAGAR and ANSHUL GOYAL</span>
+                        <span className="developed">DEVELOPED by:</span><br/>
+                        <span className="developed"> PULKIT NAGAR and ANSHUL GOYAL</span>
                     </footer>
                 </center>
             </div>

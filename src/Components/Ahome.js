@@ -1,6 +1,5 @@
 import React from 'react';
-import rvlogo from './logo_0_0.png';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import AdminHome from './AdminHome';
 // import './Home.css';
 

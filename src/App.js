@@ -1,10 +1,7 @@
-import logo from './logo.svg';
-import { BrowserRouter, Switch, Route, Redirect, useHistory } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import './App.css';
 import React from 'react';
 import Parse from 'parse/dist/parse.min.js';
-// import Navi from './Components/Navi';
-import Home from './Components/Home';
 import AddMenu from './Components/AddMenu';
 import Messmenu from './Components/Menu';
 import Landing from './Components/Landing';
